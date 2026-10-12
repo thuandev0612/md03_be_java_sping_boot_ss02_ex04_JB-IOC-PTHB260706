@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.baitapsession03.TaskCreationTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-12T14:01:18.072Z" hostname="HP" time="0.383">
+  <properties/>
+  <testcase name="nonexistentAssigneeReturns400WithoutSaving()" classname="com.example.baitapsession03.TaskCreationTests" time="0.13"/>
+  <testcase name="missingOrNullAssigneeReturns400WithoutSaving()" classname="com.example.baitapsession03.TaskCreationTests" time="0.027"/>
+  <testcase name="validAssignmentCreatesTasksWithUniqueGeneratedIdsAndPersistsThem()" classname="com.example.baitapsession03.TaskCreationTests" time="0.034"/>
+  <testcase name="duplicateIdReturns400AndPreservesExistingTask()" classname="com.example.baitapsession03.TaskCreationTests" time="0.02"/>
+  <testcase name="missingNullOrBlankTitleReturns400WithoutSaving()" classname="com.example.baitapsession03.TaskCreationTests" time="0.037"/>
+  <testcase name="uniqueProvidedIdAndOptionalDescriptionAreAccepted()" classname="com.example.baitapsession03.TaskCreationTests" time="0.023"/>
+  <testcase name="nonPositiveTaskIdReturns400WithoutSaving()" classname="com.example.baitapsession03.TaskCreationTests" time="0.031"/>
+  <testcase name="malformedBodyAndWrongAssigneeTypeReturn400WithoutSaving()" classname="com.example.baitapsession03.TaskCreationTests" time="0.064"/>
+  <system-out><![CDATA[2026-10-12T21:01:18.074+07:00  INFO 23960 --- [baitapSession03] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.baitapsession03.TaskCreationTests]: TaskCreationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-12T21:01:18.075+07:00  INFO 23960 --- [baitapSession03] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.baitapsession03.BaitapSession03Application for test class com.example.baitapsession03.TaskCreationTests
+2026-10-12T21:01:18.076+07:00  INFO 23960 --- [baitapSession03] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.baitapsession03.TaskCreationTests]: TaskCreationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-12T21:01:18.077+07:00  INFO 23960 --- [baitapSession03] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.baitapsession03.BaitapSession03Application for test class com.example.baitapsession03.TaskCreationTests
+2026-10-12T21:01:18.408+07:00  WARN 23960 --- [baitapSession03] [o-auto-1-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.example.baitapsession03.controller.TaskController.createTask(com.example.baitapsession03.model.Task)]
+2026-10-12T21:01:18.422+07:00  WARN 23960 --- [baitapSession03] [o-auto-1-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.example.baitapsession03.controller.TaskController.createTask(com.example.baitapsession03.model.Task)]
+2026-10-12T21:01:18.429+07:00  WARN 23960 --- [baitapSession03] [o-auto-1-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected end-of-input: expected close marker for Object (start marker at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #UNKNOWN])]
+2026-10-12T21:01:18.437+07:00  WARN 23960 --- [baitapSession03] [o-auto-1-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "abc": not a valid `java.lang.Integer` value]
+2026-10-12T21:01:18.444+07:00  WARN 23960 --- [baitapSession03] [o-auto-1-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from Object value (token `JsonToken.START_OBJECT`)]
+2026-10-12T21:01:18.459+07:00  INFO 23960 --- [baitapSession03] [    Test worker] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-12T21:01:18.467+07:00  INFO 23960 --- [baitapSession03] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
